@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'login',
     'relationship',
-    'grade'
+    'grade',
+    'import_export'
 )
 
 MIDDLEWARE_CLASSES = (
