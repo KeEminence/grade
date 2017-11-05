@@ -5,5 +5,9 @@ from .models import User
 class UserResource(resources.ModelResource):
 
     class Meta:
-        model = User
-        fields = ('id','user_id','user_password')
+        model = User       
+        #exclude = ('id', )
+        import_id_fields=('user_id',)
+        #skip_unchanged = True
+        fields = ('user_id','user_password',)
+        #export_order = ('user_id','user_password')
