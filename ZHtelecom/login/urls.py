@@ -3,4 +3,5 @@ import views
 
 urlpatterns=[
 	url(r'^$',views.loginui),
+	url(r'^test/$',views.test),
 ]

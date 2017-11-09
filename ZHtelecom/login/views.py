@@ -9,3 +9,8 @@ def loginui(request):
     # return HttpResponse(tmp.render())
     return render(request,'login/login.html')
 
+def test(request):
+	uname=request.POST['uname']
+	upasswd=request.POST['upwd']
+	context={'uname':uname,'upasswd':upasswd}
+	return render(request,'login/test.html',context)
